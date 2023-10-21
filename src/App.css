@@ -1,82 +1,143 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* No arquivo App.css do seu projeto React */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffbf8e1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgb(253, 253, 253);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+h1 {
+  color: #f7de06;
+}
+
+button {
+  background-color: #333;
+  color: #f7de06;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5905f5; /* Muda a cor de fundo para vermelho ao passar o mouse */
+  color: #fff; /* Altera a cor do texto para branco ao passar o mouse */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+p {
+  color: #000000;
+}
+
+/* Estilos para centralizar os botões no meio da tela */
+.piada-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.piada-section h2 {
+  color: #000;
+}
+.piada-section button {
+  margin: 5px;
+}
+
+.piada-section button {
+  margin: 5px;
+}
+
+/* Estilo para alinhar os botões ao centro */
+/* Estilo para centralizar a seção de favoritos */
+.favoritos-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Estilo para centralizar as piadas favoritadas */
+/* Estilo para a lista de favoritos */
+.favoritos-section ul {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para os itens da lista de favoritos */
+.favoritos-section li {
+  margin-bottom: 10px; /* Adicione uma margem inferior de 10px entre os itens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Estilo para o botão de remoção */
+.favoritos-section button {
+  background-color: #141411;
+  color: #f7de06;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.card {
-  padding: 2em;
+
+.favorito-item span {
+  color: #000;
+  display: block;
 }
 
-.read-the-docs {
-  color: #888;
-}
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Estilo para o botão de "Limpar todas as favoritas" ao passar o mouse */
+/* Estilo para o botão de "Limpar todas as favoritas" ao passar o mouse */
+.favoritos-section button:last-child:hover {
+  background-color: #f51505; /* Muda a cor de fundo para vermelho ao passar o mouse */
+  color: #fff; /* Altera a cor do texto para branco ao passar o mouse */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.favoritos-section h2 {
+  color: #000;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Estilo para a descrição do site */
+.site-description {
+  text-align: center; /* Centraliza o texto horizontalmente */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Estilo para o separador (linha horizontal) */
+.separator {
+  border: none;
+  border-top: 2px solid #333; /* Cor e estilo do separador */
+  margin: 20px 0; /* Espaçamento superior e inferior para o separador */
 }
