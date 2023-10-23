@@ -1,5 +1,4 @@
-/* No arquivo App.css do seu projeto React */
-
+/* Estilos globais */
 body {
   font-family: Arial, sans-serif;
   background-color: #fffbf8e1;
@@ -12,22 +11,25 @@ body {
   height: 100vh;
 }
 
+/* Container */
 .container {
-  background-color: #fafafa;
+  background-color: #f3f3f1;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgb(253, 253, 253);
   padding: 20px;
   text-align: center;
-  max-width: 400px; /* Define a largura máxima do container */
-  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 400px;
+  margin: 0 auto;
 }
 
+/* Titulo */
 h1 {
   color: #f7de06;
 }
 
+/* Botão */
 button {
-  background-color: #333;
+  background-color: #141411;
   color: #f7de06;
   border: none;
   padding: 10px 20px;
@@ -38,24 +40,27 @@ button {
 }
 
 button:hover {
-  background-color: #5905f5; /* Muda a cor de fundo para vermelho ao passar o mouse */
-  color: #fff; /* Altera a cor do texto para branco ao passar o mouse */
+  background-color: #5905f5;
+  color: #fff;
 }
 
+/* Lista não ordenada (ul) */
 ul {
   list-style: none;
   padding: 0;
 }
 
+/* Lista (li) */
 li {
   margin: 10px 0;
 }
 
+/* Parágrafos  */
 p {
   color: #000000;
 }
 
-/* Estilos para centralizar os botões no meio da tela */
+/* Seção de piadas */
 .piada-section {
   display: flex;
   flex-direction: column;
@@ -68,16 +73,12 @@ p {
 .piada-section h2 {
   color: #000;
 }
-.piada-section button {
-  margin: 5px;
-}
 
 .piada-section button {
   margin: 5px;
 }
 
-/* Estilo para alinhar os botões ao centro */
-/* Estilo para centralizar a seção de favoritos */
+/* Seção de favoritos */
 .favoritos-section {
   display: flex;
   flex-direction: column;
@@ -85,22 +86,18 @@ p {
   text-align: center;
 }
 
-/* Estilo para centralizar as piadas favoritadas */
-/* Estilo para a lista de favoritos */
 .favoritos-section ul {
   list-style: none;
   padding: 0;
 }
 
-/* Estilo para os itens da lista de favoritos */
 .favoritos-section li {
-  margin-bottom: 10px; /* Adicione uma margem inferior de 10px entre os itens */
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Estilo para o botão de remoção */
 .favoritos-section button {
   background-color: #141411;
   color: #f7de06;
@@ -111,33 +108,29 @@ p {
   transition: background-color 0.3s;
 }
 
-
+/* Itens favoritos */
 .favorito-item span {
   color: #000;
   display: block;
 }
 
-/* Estilo para o botão de "Limpar todas as favoritas" ao passar o mouse */
-/* Estilo para o botão de "Limpar todas as favoritas" ao passar o mouse */
 .favoritos-section button:last-child:hover {
-  background-color: #f51505; /* Muda a cor de fundo para vermelho ao passar o mouse */
-  color: #fff; /* Altera a cor do texto para branco ao passar o mouse */
+  background-color: #f51505;
+  color: #fff;
 }
 
 .favoritos-section h2 {
   color: #000;
-
 }
 
-
-/* Estilo para a descrição do site */
+/* Descrição */
 .site-description {
-  text-align: center; /* Centraliza o texto horizontalmente */
+  text-align: center;
 }
 
-/* Estilo para o separador (linha horizontal) */
+/* Separador */
 .separator {
   border: none;
-  border-top: 2px solid #333; /* Cor e estilo do separador */
-  margin: 20px 0; /* Espaçamento superior e inferior para o separador */
+  border-top: 2px solid #333;
+  margin: 20px 0;
 }
